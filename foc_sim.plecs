@@ -28,7 +28,7 @@ Plecs {
   AlgebraicLoopWithStateMachineMsg "3"
   AssertionAction "1"
   FixedPointDatatypeOverride "1"
-  InitializationCommands ""
+  InitializationCommands "al = 100000"
   InitialState  "1"
   SystemState   ""
   TaskingMode   "1"
@@ -53,9 +53,9 @@ Plecs {
   ScriptsDialogGeometry ""
   ScriptsDialogSplitterPos "0"
   Schematic {
-    Location      [0, 26; 2548, 1354]
+    Location      [0, 23; 1755, 1006]
     ZoomFactor    0.999997
-    SliderPosition [0, 0]
+    SliderPosition [0, 192]
     ShowBrowser   off
     BrowserWidth  100
     Component {
@@ -63,7 +63,7 @@ Plecs {
       SrcComponent  "Components/Electrical/Machines/Perm.-Magnet SM"
       Name          "Perm.-Magnet SM"
       Show          on
-      Position      [945, 685]
+      Position      [945, 920]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -144,7 +144,7 @@ Plecs {
       SrcComponent  "Components/Electrical/Power Modules/VSI1"
       Name          "VSI1"
       Show          on
-      Position      [720, 685]
+      Position      [720, 920]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -229,18 +229,18 @@ Plecs {
       Type          Capacitor
       Name          "C1"
       Show          on
-      Position      [555, 715]
+      Position      [555, 950]
       Direction     down
       Flipped       on
       LabelPosition west
       Parameter {
         Variable      "C"
-        Value         "70e-6"
+        Value         "0.1"
         Show          on
       }
       Parameter {
         Variable      "v_init"
-        Value         "540"
+        Value         "600"
         Show          off
       }
     }
@@ -248,13 +248,13 @@ Plecs {
       Type          ThreePhaseMeter
       Name          "3ph Meter"
       Show          off
-      Position      [870, 685]
+      Position      [870, 920]
       Direction     up
       Flipped       off
       LabelPosition southSoutheast
       Parameter {
         Variable      "voltage"
-        Value         "2"
+        Value         "1"
         Show          off
       }
     }
@@ -262,20 +262,20 @@ Plecs {
       Type          Scope
       Name          "Scope"
       Show          on
-      Position      [920, 600]
+      Position      [920, 835]
       Direction     up
       Flipped       off
       LabelPosition south
-      Location      [0, 26; 1755, 1050]
+      Location      [0, 26; 1755, 1068]
       State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAbwBvA"
 "G0AQQByAGUAYQAAAAAA/////wAAAF4A////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
 "///wAAAGgA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABoAP///wAAAAMAAAbbAAAA5fw"
-"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAABtsAAABQAP///wAABtsAAAL8AAAA"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAABtsAAABQAP///wAABtsAAAMOAAAA"
 "BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
 "AAAAA=="
       SavedViews    "AAAAAgAAAAA="
-      HeaderState   "{\"DefaultSecSize\":100,\"FirstSecSize\":298,\"Labels\":["
-"\"Delta\"],\"VisualIdxs\":[3]}"
+      HeaderState   "{\"DefaultSecSize\":0,\"FirstSecSize\":298,\"Labels\":[\""
+"Delta\"],\"VisualIdxs\":[3]}"
       PlotPalettes  "AAAAAQAAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAA"
 "AEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
       Axes          "2"
@@ -2954,11 +2954,11 @@ Plecs {
           Direction     up
           Flipped       off
           LabelPosition south
-          Location      [1899, -1770; 2856, -670]
+          Location      [798, 26; 1755, 1135]
           State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAb"
 "wBvAG0AQQByAGUAYQAAAAAA/////wAAAF4A////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAA"
 "AA/////wAAAGgA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABoAP///wAAAAMAAAAAAAA"
-"AAPwBAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABQAP///wAAA70AAAQx"
+"AAPwBAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABQAP///wAAA70AAAQ6"
 "AAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AA"
 "AAAAAAAAA=="
           SavedViews    "AAAAAgAAAAA="
@@ -2970,7 +2970,7 @@ Plecs {
           TimeRange     "0"
           ScrollingMode "1"
           SingleTimeAxis "1"
-          Open          "1"
+          Open          "0"
           Ts            "-1"
           SampleLimit   "0"
           XAxisLabel    "Time / s"
@@ -4143,7 +4143,7 @@ Plecs {
       SrcComponent  "Components/Control/Transformations/3ph->RRF"
       Name          "3ph->RRF"
       Show          on
-      Position      [1145, 640]
+      Position      [1145, 875]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -4194,7 +4194,7 @@ Plecs {
       Type          ControlledTorque
       Name          "Torque2"
       Show          on
-      Position      [1020, 760]
+      Position      [1020, 1070]
       Direction     left
       Flipped       off
       LabelPosition east
@@ -4218,7 +4218,7 @@ Plecs {
       Type          RotationalSpeedSensor
       Name          "Speed\nSensor1"
       Show          on
-      Position      [1145, 760]
+      Position      [1145, 995]
       Direction     left
       Flipped       on
       LabelPosition west
@@ -4232,7 +4232,7 @@ Plecs {
       Type          AngleSensor
       Name          "Angle\nSensor"
       Show          on
-      Position      [1295, 765]
+      Position      [1295, 1000]
       Direction     left
       Flipped       on
       LabelPosition west
@@ -4328,7 +4328,7 @@ Plecs {
       Type          From
       Name          "From1"
       Show          off
-      Position      [1085, 660]
+      Position      [1085, 895]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -4352,7 +4352,7 @@ Plecs {
       Type          Goto
       Name          "Goto1"
       Show          off
-      Position      [1195, 640]
+      Position      [1195, 875]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -4376,7 +4376,7 @@ Plecs {
       Type          RotationalReference
       Name          "Rotational\nFrame"
       Show          on
-      Position      [1020, 805]
+      Position      [1020, 1115]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -4385,7 +4385,7 @@ Plecs {
       Type          RotationalReference
       Name          "Rotational\nFrame1"
       Show          on
-      Position      [1145, 805]
+      Position      [1145, 1040]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -4394,7 +4394,7 @@ Plecs {
       Type          RotationalReference
       Name          "Rotational\nFrame2"
       Show          on
-      Position      [1295, 810]
+      Position      [1295, 1045]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -4417,7 +4417,7 @@ Plecs {
       Type          Goto
       Name          "Goto2"
       Show          off
-      Position      [1515, 765]
+      Position      [1515, 1000]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -4441,7 +4441,7 @@ Plecs {
       Type          Goto
       Name          "Goto3"
       Show          off
-      Position      [1260, 740]
+      Position      [1260, 975]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -4614,7 +4614,7 @@ Plecs {
       Type          From
       Name          "From7"
       Show          off
-      Position      [980, 760]
+      Position      [980, 1070]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -4686,7 +4686,7 @@ Plecs {
         Direction     right
       }
       Schematic {
-        Location      [0, 23; 1755, 1007]
+        Location      [0, 26; 1755, 1010]
         ZoomFactor    1
         SliderPosition [0, 0]
         ShowBrowser   off
@@ -5507,7 +5507,7 @@ Plecs {
       Type          From
       Name          "From9"
       Show          off
-      Position      [595, 645]
+      Position      [595, 880]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -5531,7 +5531,7 @@ Plecs {
       Type          From
       Name          "From10"
       Show          off
-      Position      [590, 725]
+      Position      [590, 960]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -5555,7 +5555,7 @@ Plecs {
       Type          From
       Name          "From11"
       Show          off
-      Position      [680, 645]
+      Position      [680, 880]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -5579,7 +5579,7 @@ Plecs {
       Type          From
       Name          "From12"
       Show          off
-      Position      [680, 725]
+      Position      [680, 960]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -5603,7 +5603,7 @@ Plecs {
       Type          From
       Name          "From13"
       Show          off
-      Position      [760, 645]
+      Position      [760, 880]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -5627,7 +5627,7 @@ Plecs {
       Type          From
       Name          "From14"
       Show          off
-      Position      [760, 725]
+      Position      [760, 960]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -5716,7 +5716,7 @@ Plecs {
       Frame         [-25, -10; 25, 10]
       Parameter {
         Variable      "Value"
-        Value         "240"
+        Value         "150"
         Show          off
       }
       Parameter {
@@ -5773,7 +5773,7 @@ Plecs {
       Type          Resistor
       Name          "R1"
       Show          on
-      Position      [440, 665]
+      Position      [440, 900]
       Direction     up
       Flipped       off
       LabelPosition east
@@ -5787,7 +5787,7 @@ Plecs {
       Type          Resistor
       Name          "R2"
       Show          on
-      Position      [555, 670]
+      Position      [555, 905]
       Direction     up
       Flipped       off
       LabelPosition east
@@ -5802,15 +5802,15 @@ Plecs {
       Type          Scope
       Name          "Scope1"
       Show          on
-      Position      [1205, 590]
+      Position      [1205, 825]
       Direction     up
       Flipped       off
       LabelPosition south
-      Location      [939, -1770; 1896, -670]
+      Location      [798, 26; 1755, 1216]
       State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAbwBvA"
 "G0AQQByAGUAYQAAAAAA/////wAAADYA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
-"///wAAAGgA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABoAP///wAAAAMAAAO9AAAAiPw"
-"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAAA70AAABQAP///wAAA70AAAOlAAAA"
+"///wAAAGgA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABoAP///wAAAAMAAAO9AAAAYvw"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAAA70AAABQAP///wAAA70AAAQlAAAA"
 "BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
 "AAAAA=="
       SavedViews    "AAAAAgAAAAA="
@@ -5821,7 +5821,7 @@ Plecs {
       TimeRange     "0.0"
       ScrollingMode "1"
       SingleTimeAxis "1"
-      Open          "1"
+      Open          "0"
       Ts            "-1"
       SampleLimit   "0"
       XAxisLabel    "Time / s"
@@ -5859,15 +5859,15 @@ Plecs {
       Type          Scope
       Name          "Scope2"
       Show          on
-      Position      [1280, 860]
+      Position      [1280, 1095]
       Direction     up
       Flipped       off
       LabelPosition south
-      Location      [0, 23; 1755, 1029]
+      Location      [0, 26; 1755, 1041]
       State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAbwBvA"
 "G0AQQByAGUAYQAAAAAA/////wAAADYA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
 "///wAAAGgA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABoAP///wAAAAMAAAAAAAAAAPw"
-"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABQAP///wAABtsAAAPTAAAA"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABQAP///wAABtsAAAPcAAAA"
 "BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
 "AAAAA=="
       SavedViews    "AAAAAgAAAAA="
@@ -5973,7 +5973,7 @@ Plecs {
       Type          Scope
       Name          "Scope4"
       Show          on
-      Position      [1420, 705]
+      Position      [1420, 940]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -6030,7 +6030,7 @@ Plecs {
       Type          Gain
       Name          "Gain"
       Show          on
-      Position      [1400, 765]
+      Position      [1400, 1000]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -6179,7 +6179,7 @@ Plecs {
       Type          Gain
       Name          "Gain2"
       Show          on
-      Position      [1190, 760]
+      Position      [1190, 995]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -6877,7 +6877,7 @@ Plecs {
       Frame         [-25, -10; 25, 10]
       Parameter {
         Variable      "Value"
-        Value         "200"
+        Value         "600"
         Show          off
       }
       Parameter {
@@ -7552,11 +7552,11 @@ Plecs {
       Direction     up
       Flipped       off
       LabelPosition south
-      Location      [299, 288; 1548, 901]
+      Location      [299, 288; 1548, 919]
       State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAbwBvA"
 "G0AQQByAGUAYQAAAAAA/////wAAADYA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
 "///wAAAGgA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABoAP///wAAAAMAAAAAAAAAAPw"
-"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABQAP///wAABOEAAAJKAAAA"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABQAP///wAABOEAAAJcAAAA"
 "BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
 "AAAAA=="
       SavedViews    "AAAAAgAAAAA="
@@ -7609,11 +7609,11 @@ Plecs {
       Direction     up
       Flipped       off
       LabelPosition south
-      Location      [193, 319; 1659, 971]
+      Location      [193, 319; 1659, 980]
       State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAbwBvA"
 "G0AQQByAGUAYQAAAAAA/////wAAADYA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
 "///wAAAGgA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABoAP///wAAAAMAAAAAAAAAAPw"
-"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABQAP///wAABboAAAJxAAAA"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABQAP///wAABboAAAJ6AAAA"
 "BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
 "AAAAA=="
       SavedViews    "AAAAAgAAAAA="
@@ -7624,7 +7624,7 @@ Plecs {
       TimeRange     "0.0"
       ScrollingMode "1"
       SingleTimeAxis "1"
-      Open          "1"
+      Open          "0"
       Ts            "-1"
       SampleLimit   "0"
       XAxisLabel    "Time / s"
@@ -7662,7 +7662,7 @@ Plecs {
       Type          VoltageSource
       Name          "V"
       Show          on
-      Position      [440, 715]
+      Position      [440, 950]
       Direction     down
       Flipped       on
       LabelPosition east
@@ -7681,7 +7681,7 @@ Plecs {
       Type          From
       Name          "From18"
       Show          off
-      Position      [405, 715]
+      Position      [285, 985]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -7705,14 +7705,14 @@ Plecs {
       Type          Constant
       Name          "Constant20"
       Show          on
-      Position      [285, 890]
+      Position      [285, 1125]
       Direction     right
       Flipped       off
       LabelPosition south
       Frame         [-25, -10; 25, 10]
       Parameter {
         Variable      "Value"
-        Value         "0.2"
+        Value         "0.0225"
         Show          off
       }
       Parameter {
@@ -7725,7 +7725,7 @@ Plecs {
       Type          Goto
       Name          "Goto18"
       Show          off
-      Position      [540, 870]
+      Position      [540, 1105]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -7749,7 +7749,7 @@ Plecs {
       Type          Product
       Name          "Product6"
       Show          off
-      Position      [395, 885]
+      Position      [395, 1120]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -7778,7 +7778,7 @@ Plecs {
       Type          From
       Name          "From26"
       Show          off
-      Position      [295, 855]
+      Position      [295, 1090]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -7802,7 +7802,7 @@ Plecs {
       Type          ManualSignalSwitch
       Name          "Manual Switch"
       Show          on
-      Position      [460, 875]
+      Position      [460, 1110]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -7816,7 +7816,7 @@ Plecs {
       Type          Step
       Name          "Step"
       Show          on
-      Position      [360, 820]
+      Position      [360, 1055]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -7845,7 +7845,7 @@ Plecs {
       Type          Scope
       Name          "Scope12"
       Show          on
-      Position      [590, 890]
+      Position      [590, 1125]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -7992,20 +7992,16 @@ Plecs {
       Direction     up
       Flipped       off
       LabelPosition south
-      Location      [437, 379; 1955, 1198]
+      Location      [237, 251; 1755, 1106]
       State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAbwBvA"
-"G0AQQByAGUAYQAAAAAA/////wAAAEwA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
-"///wAAAJcA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAACXAP///wAAAAMAAAjlAAAAmfw"
-"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAACOUAAABxAP///wAACOUAAAQLAAAA"
+"G0AQQByAGUAYQAAAAAA/////wAAADYA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
+"///wAAAGgA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABoAP///wAAAAMAAAXuAAAAdfw"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAABe4AAABQAP///wAABe4AAALDAAAA"
 "BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
 "AAAAA=="
       SavedViews    "AAAAAgAAAAA="
-      HeaderState   "AAAA/wAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAL/gMAAAAJAAAAC"
-"QAAAJYAAAAIAAAAlgAAAAcAAACWAAAABgAAAJYAAAAFAAAAlgAAAAQAAACWAAAAAwAAAJYAAAACAA"
-"AAlgAAAAEAAACWAAAI5QAAAAsBAAABAAAAAAAAAAAAAAAAlv////8AAACBAAAAAAAAAAsAAACrAAA"
-"AAQAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAQAAAAAAAAAA"
-"AAAAAQAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAQAAAAAAA"
-"Ag6AAAAAQAAAAAAAAPoAAAAADU="
+      HeaderState   "{\"DefaultSecSize\":0,\"FirstSecSize\":171,\"Labels\":[],"
+"\"VisualIdxs\":[]}"
       PlotPalettes  "AAAAAQAAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
       Axes          "1"
       TimeRange     "0.0"
@@ -8628,6 +8624,847 @@ Plecs {
         }
       }
     }
+    Component {
+      Type          Ammeter
+      Name          "Am1"
+      Show          on
+      Position      [505, 855]
+      Direction     left
+      Flipped       off
+      LabelPosition south
+    }
+    Component {
+      Type          Product
+      Name          "Product2"
+      Show          off
+      Position      [560, 810]
+      Direction     up
+      Flipped       off
+      LabelPosition south
+      Parameter {
+        Variable      "IconShape"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "Inputs"
+        Value         "**"
+        Show          off
+      }
+      Parameter {
+        Variable      "DataType"
+        Value         "11"
+        Show          off
+      }
+      Parameter {
+        Variable      "DataTypeOverflowMode"
+        Value         "1"
+        Show          off
+      }
+    }
+    Component {
+      Type          Scope
+      Name          "Scope14"
+      Show          on
+      Position      [630, 815]
+      Direction     up
+      Flipped       off
+      LabelPosition south
+      Location      [0, 26; 1755, 1122]
+      State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAbwBvA"
+"G0AQQByAGUAYQAAAAAA/////wAAAF4A////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
+"///wAAAGgA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABoAP///wAAAAMAAAbbAAAAmfw"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAABtsAAABQAP///wAABtsAAAOQAAAA"
+"BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
+"AAAAA=="
+      SavedViews    "AAAAAgAAAAA="
+      HeaderState   "{\"DefaultSecSize\":0,\"FirstSecSize\":298,\"Labels\":[\""
+"Delta\"],\"VisualIdxs\":[3]}"
+      PlotPalettes  "AAAAAQAAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAA"
+"AEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+      Axes          "2"
+      TimeRange     "0"
+      ScrollingMode "1"
+      SingleTimeAxis "1"
+      Open          "0"
+      Ts            "-1"
+      SampleLimit   "0"
+      XAxisLabel    "Time / s"
+      ShowLegend    "1"
+      Axis {
+        Name          ""
+        AutoScale     1
+        MinValue      0
+        MaxValue      1
+        Signals       {}
+        SignalTypes   [ ]
+        Untangle      0
+        KeepBaseline  off
+        BaselineValue 0
+      }
+      Axis {
+        Name          ""
+        AutoScale     1
+        MinValue      0
+        MaxValue      1
+        Signals       {}
+        SignalTypes   [ ]
+        Untangle      0
+        KeepBaseline  off
+        BaselineValue 0
+      }
+      Fourier {
+        SingleXAxis       on
+        AxisLabel         "Frequency / Hz"
+        Scaling           0
+        PhaseDisplay      0
+        ShowFourierLegend off
+        Axis {
+          Name          ""
+          AutoScale     1
+          MinValue      0
+          MaxValue      1
+          Signals       {}
+          Untangle      0
+          KeepBaseline  off
+          BaselineValue 0
+        }
+        Axis {
+          Name          ""
+          AutoScale     1
+          MinValue      0
+          MaxValue      1
+          Signals       {}
+          Untangle      0
+          KeepBaseline  off
+          BaselineValue 0
+        }
+      }
+    }
+    Component {
+      Type          Product
+      Name          "Product3"
+      Show          off
+      Position      [1340, 765]
+      Direction     up
+      Flipped       off
+      LabelPosition south
+      Parameter {
+        Variable      "IconShape"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "Inputs"
+        Value         "**"
+        Show          off
+      }
+      Parameter {
+        Variable      "DataType"
+        Value         "11"
+        Show          off
+      }
+      Parameter {
+        Variable      "DataTypeOverflowMode"
+        Value         "1"
+        Show          off
+      }
+    }
+    Component {
+      Type          PlecsProbe
+      Name          "Probe"
+      Show          on
+      Position      [1280, 725]
+      Direction     right
+      Flipped       off
+      LabelPosition south
+      Probe {
+        Component     "Perm.-Magnet SM"
+        Path          ""
+        Signals       {"Electrical torque"}
+      }
+    }
+    Component {
+      Type          Scope
+      Name          "Scope15"
+      Show          on
+      Position      [1435, 800]
+      Direction     up
+      Flipped       off
+      LabelPosition south
+      Location      [218, 251; 1587, 1003]
+      State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAbwBvA"
+"G0AQQByAGUAYQAAAAAA/////wAAADYA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
+"///wAAAGgA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABoAP///wAAAAMAAAAAAAAAAPw"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABQAP///wAABVkAAALVAAAA"
+"BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
+"AAAAA=="
+      SavedViews    "AAAAAgAAAAA="
+      HeaderState   "{\"DefaultSecSize\":0,\"FirstSecSize\":171,\"Labels\":[],"
+"\"VisualIdxs\":[]}"
+      PlotPalettes  "AAAAAQAAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+      Axes          "1"
+      TimeRange     "0.0"
+      ScrollingMode "1"
+      SingleTimeAxis "1"
+      Open          "0"
+      Ts            "-1"
+      SampleLimit   "0"
+      XAxisLabel    "Time / s"
+      ShowLegend    "1"
+      Axis {
+        Name          ""
+        AutoScale     1
+        MinValue      0
+        MaxValue      1
+        Signals       {}
+        SignalTypes   [ ]
+        Untangle      0
+        KeepBaseline  off
+        BaselineValue 0
+      }
+      Fourier {
+        SingleXAxis       on
+        AxisLabel         "Frequency / Hz"
+        Scaling           0
+        PhaseDisplay      0
+        ShowFourierLegend off
+        Axis {
+          Name          ""
+          AutoScale     1
+          MinValue      0
+          MaxValue      1
+          Signals       {}
+          Untangle      0
+          KeepBaseline  off
+          BaselineValue 0
+        }
+      }
+    }
+    Component {
+      Type          TransferFunction
+      Name          "Transfer Fcn"
+      Show          on
+      Position      [955, 610]
+      Direction     right
+      Flipped       off
+      LabelPosition south
+      Frame         [-30, -15; 30, 15]
+      Parameter {
+        Variable      "Numerator"
+        Value         "[al]"
+        Show          off
+      }
+      Parameter {
+        Variable      "Denominator"
+        Value         "[1 al]"
+        Show          off
+      }
+      Parameter {
+        Variable      "X0"
+        Value         "0"
+        Show          off
+      }
+    }
+    Component {
+      Type          TransferFunction
+      Name          "Transfer Fcn1"
+      Show          on
+      Position      [955, 680]
+      Direction     right
+      Flipped       off
+      LabelPosition south
+      Frame         [-30, -15; 30, 15]
+      Parameter {
+        Variable      "Numerator"
+        Value         "[al]"
+        Show          off
+      }
+      Parameter {
+        Variable      "Denominator"
+        Value         "[1 al]"
+        Show          off
+      }
+      Parameter {
+        Variable      "X0"
+        Value         "0"
+        Show          off
+      }
+    }
+    Component {
+      Type          Scope
+      Name          "Scope16"
+      Show          on
+      Position      [1060, 720]
+      Direction     up
+      Flipped       off
+      LabelPosition south
+      Location      [0, 26; 1755, 1085]
+      State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAbwBvA"
+"G0AQQByAGUAYQAAAAAA/////wAAAF4A////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
+"///wAAAGgA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABoAP///wAAAAMAAAbbAAAAv/w"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAABtsAAABQAP///wAABtsAAANFAAAA"
+"BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
+"AAAAA=="
+      SavedViews    "AAAAAgAAAAA="
+      HeaderState   "{\"DefaultSecSize\":0,\"FirstSecSize\":61,\"Labels\":[\"D"
+"elta\"],\"VisualIdxs\":[3]}"
+      PlotPalettes  "AAAAAQAAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAA"
+"AEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+      Axes          "2"
+      TimeRange     "0"
+      ScrollingMode "1"
+      SingleTimeAxis "1"
+      Open          "0"
+      Ts            "-1"
+      SampleLimit   "0"
+      XAxisLabel    "Time / s"
+      ShowLegend    "1"
+      Axis {
+        Name          ""
+        AutoScale     1
+        MinValue      0
+        MaxValue      1
+        Signals       {}
+        SignalTypes   [ ]
+        Untangle      0
+        KeepBaseline  off
+        BaselineValue 0
+      }
+      Axis {
+        Name          ""
+        AutoScale     1
+        MinValue      0
+        MaxValue      1
+        Signals       {}
+        SignalTypes   [ ]
+        Untangle      0
+        KeepBaseline  off
+        BaselineValue 0
+      }
+      Fourier {
+        SingleXAxis       on
+        AxisLabel         "Frequency / Hz"
+        Scaling           0
+        PhaseDisplay      0
+        ShowFourierLegend off
+        Axis {
+          Name          ""
+          AutoScale     1
+          MinValue      0
+          MaxValue      1
+          Signals       {}
+          Untangle      0
+          KeepBaseline  off
+          BaselineValue 0
+        }
+        Axis {
+          Name          ""
+          AutoScale     1
+          MinValue      0
+          MaxValue      1
+          Signals       {}
+          Untangle      0
+          KeepBaseline  off
+          BaselineValue 0
+        }
+      }
+    }
+    Component {
+      Type          Scope
+      Name          "Scope17"
+      Show          on
+      Position      [1085, 650]
+      Direction     up
+      Flipped       off
+      LabelPosition south
+      Location      [0, 26; 1755, 1238]
+      State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAbwBvA"
+"G0AQQByAGUAYQAAAAAA/////wAAAF4A////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
+"///wAAAGgA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABoAP///wAAAAMAAAbbAAAA5fw"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAABtsAAABQAP///wAABtsAAAO4AAAA"
+"BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
+"AAAAA=="
+      SavedViews    "AAAAAgAAAAA="
+      HeaderState   "{\"DefaultSecSize\":0,\"FirstSecSize\":136,\"Labels\":[\""
+"Delta\"],\"VisualIdxs\":[3]}"
+      PlotPalettes  "AAAAAQAAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAA"
+"AEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+      Axes          "2"
+      TimeRange     "0"
+      ScrollingMode "1"
+      SingleTimeAxis "1"
+      Open          "0"
+      Ts            "-1"
+      SampleLimit   "0"
+      XAxisLabel    "Time / s"
+      ShowLegend    "1"
+      Axis {
+        Name          ""
+        AutoScale     1
+        MinValue      0
+        MaxValue      1
+        Signals       {}
+        SignalTypes   [ ]
+        Untangle      0
+        KeepBaseline  off
+        BaselineValue 0
+      }
+      Axis {
+        Name          ""
+        AutoScale     1
+        MinValue      0
+        MaxValue      1
+        Signals       {}
+        SignalTypes   [ ]
+        Untangle      0
+        KeepBaseline  off
+        BaselineValue 0
+      }
+      Fourier {
+        SingleXAxis       on
+        AxisLabel         "Frequency / Hz"
+        Scaling           0
+        PhaseDisplay      0
+        ShowFourierLegend off
+        Axis {
+          Name          ""
+          AutoScale     1
+          MinValue      0
+          MaxValue      1
+          Signals       {}
+          Untangle      0
+          KeepBaseline  off
+          BaselineValue 0
+        }
+        Axis {
+          Name          ""
+          AutoScale     1
+          MinValue      0
+          MaxValue      1
+          Signals       {}
+          Untangle      0
+          KeepBaseline  off
+          BaselineValue 0
+        }
+      }
+    }
+    Component {
+      Type          Product
+      Name          "Product4"
+      Show          off
+      Position      [1095, 575]
+      Direction     up
+      Flipped       off
+      LabelPosition south
+      Parameter {
+        Variable      "IconShape"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "Inputs"
+        Value         "**"
+        Show          off
+      }
+      Parameter {
+        Variable      "DataType"
+        Value         "11"
+        Show          off
+      }
+      Parameter {
+        Variable      "DataTypeOverflowMode"
+        Value         "1"
+        Show          off
+      }
+    }
+    Component {
+      Type          Function
+      Name          "Fcn"
+      Show          on
+      Position      [1160, 575]
+      Direction     right
+      Flipped       off
+      LabelPosition south
+      Frame         [-20, -10; 20, 10]
+      Parameter {
+        Variable      "f(u)"
+        Value         "(u[1]+u[2]+u[3])"
+        Show          off
+      }
+    }
+    Component {
+      Type          Scope
+      Name          "Scope18"
+      Show          on
+      Position      [1370, 575]
+      Direction     up
+      Flipped       off
+      LabelPosition south
+      Location      [558, 285; 1681, 1051]
+      State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAbwBvA"
+"G0AQQByAGUAYQAAAAAA/////wAAADYA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
+"///wAAAGgA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABoAP///wAAAAMAAAAAAAAAAPw"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABQAP///wAABGMAAALjAAAA"
+"BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
+"AAAAA=="
+      SavedViews    "AAAAAgAAAAA="
+      HeaderState   "{\"DefaultSecSize\":0,\"FirstSecSize\":81,\"Labels\":[],"
+"\"VisualIdxs\":[]}"
+      PlotPalettes  "AAAAAQAAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+      Axes          "1"
+      TimeRange     "0.0"
+      ScrollingMode "1"
+      SingleTimeAxis "1"
+      Open          "0"
+      Ts            "-1"
+      SampleLimit   "0"
+      XAxisLabel    "Time / s"
+      ShowLegend    "1"
+      Axis {
+        Name          ""
+        AutoScale     1
+        MinValue      0
+        MaxValue      1
+        Signals       {}
+        SignalTypes   [ ]
+        Untangle      0
+        KeepBaseline  off
+        BaselineValue 0
+      }
+      Fourier {
+        SingleXAxis       on
+        AxisLabel         "Frequency / Hz"
+        Scaling           0
+        PhaseDisplay      0
+        ShowFourierLegend off
+        Axis {
+          Name          ""
+          AutoScale     1
+          MinValue      0
+          MaxValue      1
+          Signals       {}
+          Untangle      0
+          KeepBaseline  off
+          BaselineValue 0
+        }
+      }
+    }
+    Component {
+      Type          Ground
+      Name          "Ground"
+      Show          off
+      Position      [870, 960]
+      Direction     up
+      Flipped       off
+      LabelPosition east
+    }
+    Component {
+      Type          VoltageSource
+      Name          "V1"
+      Show          on
+      Position      [440, 1005]
+      Direction     down
+      Flipped       on
+      LabelPosition east
+      Parameter {
+        Variable      "DiscretizationBehavior"
+        Value         "2"
+        Show          off
+      }
+      Parameter {
+        Variable      "StateSpaceInlining"
+        Value         "1"
+        Show          off
+      }
+    }
+    Component {
+      Type          Gain
+      Name          "Gain4"
+      Show          on
+      Position      [340, 985]
+      Direction     right
+      Flipped       off
+      LabelPosition south
+      Parameter {
+        Variable      "K"
+        Value         "0.5"
+        Show          off
+      }
+      Parameter {
+        Variable      "Multiplication"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "OutputDataType"
+        Value         "11"
+        Show          off
+      }
+      Parameter {
+        Variable      "DataTypeOverflowMode"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "GainDataType"
+        Value         "11"
+        Show          off
+      }
+    }
+    Component {
+      Type          Ground
+      Name          "Ground1"
+      Show          off
+      Position      [410, 985]
+      Direction     up
+      Flipped       off
+      LabelPosition east
+    }
+    Component {
+      Type          TorqueSensor
+      Name          "Torque\nSensor"
+      Show          on
+      Position      [1020, 1015]
+      Direction     left
+      Flipped       on
+      LabelPosition west
+      Parameter {
+        Variable      "SecondFlange"
+        Value         "2"
+        Show          off
+      }
+    }
+    Component {
+      Type          Scope
+      Name          "Scope19"
+      Show          on
+      Position      [1070, 1040]
+      Direction     up
+      Flipped       off
+      LabelPosition south
+      Location      [0, 26; 1755, 1049]
+      State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAbwBvA"
+"G0AQQByAGUAYQAAAAAA/////wAAADYA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
+"///wAAAGgA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABoAP///wAAAAMAAAbbAAAAYvw"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAABtsAAABQAP///wAABtsAAAN+AAAA"
+"BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
+"AAAAA=="
+      SavedViews    "AAAAAgAAAAA="
+      HeaderState   "{\"DefaultSecSize\":0,\"FirstSecSize\":124,\"Labels\":[\""
+"Delta\"],\"VisualIdxs\":[3]}"
+      PlotPalettes  "AAAAAQAAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+      Axes          "1"
+      TimeRange     "0.0"
+      ScrollingMode "1"
+      SingleTimeAxis "1"
+      Open          "0"
+      Ts            "-1"
+      SampleLimit   "0"
+      XAxisLabel    "Time / s"
+      ShowLegend    "1"
+      Axis {
+        Name          ""
+        AutoScale     1
+        MinValue      0
+        MaxValue      1
+        Signals       {}
+        SignalTypes   [ ]
+        Untangle      0
+        KeepBaseline  off
+        BaselineValue 0
+      }
+      Fourier {
+        SingleXAxis       on
+        AxisLabel         "Frequency / Hz"
+        Scaling           0
+        PhaseDisplay      0
+        ShowFourierLegend off
+        Axis {
+          Name          ""
+          AutoScale     1
+          MinValue      0
+          MaxValue      1
+          Signals       {}
+          Untangle      0
+          KeepBaseline  off
+          BaselineValue 0
+        }
+      }
+    }
+    Component {
+      Type          Scope
+      Name          "Scope20"
+      Show          on
+      Position      [1395, 695]
+      Direction     up
+      Flipped       off
+      LabelPosition south
+      Location      [218, 251; 1587, 994]
+      State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAbwBvA"
+"G0AQQByAGUAYQAAAAAA/////wAAADYA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
+"///wAAAGgA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABoAP///wAAAAMAAAAAAAAAAPw"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABQAP///wAABVkAAALMAAAA"
+"BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
+"AAAAA=="
+      SavedViews    "AAAAAgAAAAA="
+      HeaderState   "{\"DefaultSecSize\":0,\"FirstSecSize\":171,\"Labels\":[],"
+"\"VisualIdxs\":[]}"
+      PlotPalettes  "AAAAAQAAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+      Axes          "1"
+      TimeRange     "0.0"
+      ScrollingMode "1"
+      SingleTimeAxis "1"
+      Open          "0"
+      Ts            "-1"
+      SampleLimit   "0"
+      XAxisLabel    "Time / s"
+      ShowLegend    "1"
+      Axis {
+        Name          ""
+        AutoScale     1
+        MinValue      0
+        MaxValue      1
+        Signals       {}
+        SignalTypes   [ ]
+        Untangle      0
+        KeepBaseline  off
+        BaselineValue 0
+      }
+      Fourier {
+        SingleXAxis       on
+        AxisLabel         "Frequency / Hz"
+        Scaling           0
+        PhaseDisplay      0
+        ShowFourierLegend off
+        Axis {
+          Name          ""
+          AutoScale     1
+          MinValue      0
+          MaxValue      1
+          Signals       {}
+          Untangle      0
+          KeepBaseline  off
+          BaselineValue 0
+        }
+      }
+    }
+    Component {
+      Type          Goto
+      Name          "Goto20"
+      Show          off
+      Position      [1060, 1015]
+      Direction     right
+      Flipped       off
+      LabelPosition south
+      Parameter {
+        Variable      "Tag"
+        Value         "Tm"
+        Show          off
+      }
+      Parameter {
+        Variable      "Visibility"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "NoMatchingCounterpartAction"
+        Value         "2"
+        Show          off
+      }
+    }
+    Component {
+      Type          From
+      Name          "From23"
+      Show          off
+      Position      [1295, 825]
+      Direction     right
+      Flipped       off
+      LabelPosition south
+      Parameter {
+        Variable      "Tag"
+        Value         "Tm"
+        Show          off
+      }
+      Parameter {
+        Variable      "Visibility"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "NoMatchingCounterpartAction"
+        Value         "1"
+        Show          off
+      }
+    }
+    Component {
+      Type          SignalMux
+      Name          "Mux2"
+      Show          off
+      Position      [1385, 800]
+      Direction     right
+      Flipped       off
+      LabelPosition south
+      Parameter {
+        Variable      "Width"
+        Value         "2"
+        Show          off
+      }
+    }
+    Component {
+      Type          Product
+      Name          "Product5"
+      Show          off
+      Position      [1340, 805]
+      Direction     up
+      Flipped       off
+      LabelPosition south
+      Parameter {
+        Variable      "IconShape"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "Inputs"
+        Value         "**"
+        Show          off
+      }
+      Parameter {
+        Variable      "DataType"
+        Value         "11"
+        Show          off
+      }
+      Parameter {
+        Variable      "DataTypeOverflowMode"
+        Value         "1"
+        Show          off
+      }
+    }
+    Component {
+      Type          TransferFunction
+      Name          "Transfer Fcn2"
+      Show          on
+      Position      [1265, 575]
+      Direction     right
+      Flipped       off
+      LabelPosition south
+      Frame         [-30, -15; 30, 15]
+      Parameter {
+        Variable      "Numerator"
+        Value         "[al/10]"
+        Show          off
+      }
+      Parameter {
+        Variable      "Denominator"
+        Value         "[1 al/10]"
+        Show          off
+      }
+      Parameter {
+        Variable      "X0"
+        Value         "0"
+        Show          off
+      }
+    }
     Connection {
       Type          Wire
       SrcComponent  "VSI1"
@@ -8674,11 +9511,25 @@ Plecs {
       Type          Signal
       SrcComponent  "3ph Meter"
       SrcTerminal   8
-      Points        [875, 635]
+      Points        [875, 870]
       Branch {
-        Points        [875, 605]
-        DstComponent  "Scope"
-        DstTerminal   2
+        Points        [875, 840]
+        Branch {
+          DstComponent  "Scope"
+          DstTerminal   2
+        }
+        Branch {
+          Points        [875, 725]
+          Branch {
+            Points        [875, 680]
+            DstComponent  "Transfer Fcn1"
+            DstTerminal   1
+          }
+          Branch {
+            DstComponent  "Scope16"
+            DstTerminal   2
+          }
+        }
       }
       Branch {
         DstComponent  "3ph->RRF"
@@ -8687,24 +9538,24 @@ Plecs {
     }
     Connection {
       Type          Rotational
-      SrcComponent  "Perm.-Magnet SM"
-      SrcTerminal   4
-      Points        [1020, 715]
+      SrcComponent  "Speed\nSensor1"
+      SrcTerminal   3
+      Points        [1145, 950]
       Branch {
-        DstComponent  "Torque2"
-        DstTerminal   3
+        Points        [1020, 950]
+        Branch {
+          DstComponent  "Perm.-Magnet SM"
+          DstTerminal   4
+        }
+        Branch {
+          DstComponent  "Torque\nSensor"
+          DstTerminal   3
+        }
       }
       Branch {
-        Points        [1145, 715]
-        Branch {
-          DstComponent  "Speed\nSensor1"
-          DstTerminal   3
-        }
-        Branch {
-          Points        [1295, 715]
-          DstComponent  "Angle\nSensor"
-          DstTerminal   3
-        }
+        Points        [1295, 950]
+        DstComponent  "Angle\nSensor"
+        DstTerminal   3
       }
     }
     Connection {
@@ -8719,7 +9570,7 @@ Plecs {
       Type          Signal
       SrcComponent  "From1"
       SrcTerminal   1
-      Points        [1105, 660; 1105, 645]
+      Points        [1105, 895; 1105, 880]
       DstComponent  "3ph->RRF"
       DstTerminal   3
     }
@@ -8788,21 +9639,6 @@ Plecs {
       SrcTerminal   1
       DstComponent  "Torque2"
       DstTerminal   2
-    }
-    Connection {
-      Type          Wire
-      SrcComponent  "C1"
-      SrcTerminal   2
-      Points        [555, 750]
-      Branch {
-        DstComponent  "VSI1"
-        DstTerminal   6
-      }
-      Branch {
-        Points        [440, 750]
-        DstComponent  "V"
-        DstTerminal   2
-      }
     }
     Connection {
       Type          Signal
@@ -8944,24 +9780,10 @@ Plecs {
       DstTerminal   2
     }
     Connection {
-      Type          Wire
-      SrcComponent  "R1"
-      SrcTerminal   1
-      Points        [440, 620; 555, 620]
-      Branch {
-        DstComponent  "VSI1"
-        DstTerminal   4
-      }
-      Branch {
-        DstComponent  "R2"
-        DstTerminal   1
-      }
-    }
-    Connection {
       Type          Signal
       SrcComponent  "3ph->RRF"
       SrcTerminal   2
-      Points        [1175, 640]
+      Points        [1175, 875]
       Branch {
         DstComponent  "Goto1"
         DstTerminal   1
@@ -8975,13 +9797,13 @@ Plecs {
       Type          Signal
       SrcComponent  "Angle\nSensor"
       SrcTerminal   2
-      Points        [1310, 765]
+      Points        [1310, 1000]
       Branch {
         DstComponent  "Gain"
         DstTerminal   1
       }
       Branch {
-        Points        [1345, 765; 1345, 705]
+        Points        [1345, 1000; 1345, 940]
         DstComponent  "Scope4"
         DstTerminal   1
       }
@@ -9018,14 +9840,28 @@ Plecs {
       Type          Signal
       SrcComponent  "Gain2"
       SrcTerminal   2
-      Points        [1225, 760]
+      Points        [1225, 995]
       Branch {
-        Points        [1225, 740]
-        DstComponent  "Goto3"
-        DstTerminal   1
+        Points        [1225, 975; 1240, 975]
+        Branch {
+          DstComponent  "Goto3"
+          DstTerminal   1
+        }
+        Branch {
+          Points        [1240, 770; 1300, 770]
+          Branch {
+            DstComponent  "Product3"
+            DstTerminal   3
+          }
+          Branch {
+            Points        [1300, 800]
+            DstComponent  "Product5"
+            DstTerminal   2
+          }
+        }
       }
       Branch {
-        Points        [1225, 860]
+        Points        [1225, 1095]
         DstComponent  "Scope2"
         DstTerminal   1
       }
@@ -9158,13 +9994,6 @@ Plecs {
     }
     Connection {
       Type          Signal
-      SrcComponent  "From18"
-      SrcTerminal   1
-      DstComponent  "V"
-      DstTerminal   3
-    }
-    Connection {
-      Type          Signal
       SrcComponent  "Constant20"
       SrcTerminal   1
       DstComponent  "Product6"
@@ -9174,7 +10003,7 @@ Plecs {
       Type          Signal
       SrcComponent  "From26"
       SrcTerminal   1
-      Points        [335, 855; 335, 880]
+      Points        [335, 1090; 335, 1115]
       DstComponent  "Product6"
       DstTerminal   2
     }
@@ -9182,7 +10011,7 @@ Plecs {
       Type          Signal
       SrcComponent  "Product6"
       SrcTerminal   1
-      Points        [425, 885; 425, 880]
+      Points        [425, 1120; 425, 1115]
       DstComponent  "Manual Switch"
       DstTerminal   3
     }
@@ -9190,7 +10019,7 @@ Plecs {
       Type          Signal
       SrcComponent  "Step"
       SrcTerminal   1
-      Points        [415, 820; 415, 870]
+      Points        [415, 1055; 415, 1105]
       DstComponent  "Manual Switch"
       DstTerminal   2
     }
@@ -9198,14 +10027,14 @@ Plecs {
       Type          Signal
       SrcComponent  "Manual Switch"
       SrcTerminal   1
-      Points        [500, 875]
+      Points        [500, 1110]
       Branch {
-        Points        [500, 870]
+        Points        [500, 1105]
         DstComponent  "Goto18"
         DstTerminal   1
       }
       Branch {
-        Points        [500, 890]
+        Points        [500, 1125]
         DstComponent  "Scope12"
         DstTerminal   1
       }
@@ -9231,14 +10060,6 @@ Plecs {
         DstComponent  "Scope10"
         DstTerminal   1
       }
-    }
-    Connection {
-      Type          Signal
-      SrcComponent  "3ph Meter"
-      SrcTerminal   7
-      Points        [865, 595]
-      DstComponent  "Scope"
-      DstTerminal   1
     }
     Connection {
       Type          Signal
@@ -9440,6 +10261,258 @@ Plecs {
         DstComponent  "Scope13"
         DstTerminal   1
       }
+    }
+    Connection {
+      Type          Wire
+      SrcComponent  "VSI1"
+      SrcTerminal   4
+      Points        [555, 855]
+      Branch {
+        DstComponent  "R2"
+        DstTerminal   1
+      }
+      Branch {
+        DstComponent  "Am1"
+        DstTerminal   2
+      }
+    }
+    Connection {
+      Type          Wire
+      SrcComponent  "Am1"
+      SrcTerminal   1
+      Points        [440, 855]
+      DstComponent  "R1"
+      DstTerminal   1
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Product2"
+      SrcTerminal   1
+      DstComponent  "Scope14"
+      DstTerminal   1
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Am1"
+      SrcTerminal   3
+      Points        [505, 820]
+      Branch {
+        Points        [505, 815]
+        DstComponent  "Product2"
+        DstTerminal   3
+      }
+      Branch {
+        DstComponent  "Scope14"
+        DstTerminal   2
+      }
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Transfer Fcn1"
+      SrcTerminal   2
+      Points        [1010, 680]
+      Branch {
+        Points        [1010, 715]
+        DstComponent  "Scope16"
+        DstTerminal   1
+      }
+      Branch {
+        Points        [1010, 655; 1035, 655]
+        Branch {
+          DstComponent  "Scope17"
+          DstTerminal   2
+        }
+        Branch {
+          Points        [1035, 580]
+          DstComponent  "Product4"
+          DstTerminal   3
+        }
+      }
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Transfer Fcn"
+      SrcTerminal   2
+      Points        [1025, 610]
+      Branch {
+        Points        [1025, 645]
+        DstComponent  "Scope17"
+        DstTerminal   1
+      }
+      Branch {
+        Points        [1025, 570]
+        DstComponent  "Product4"
+        DstTerminal   2
+      }
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Product4"
+      SrcTerminal   1
+      DstComponent  "Fcn"
+      DstTerminal   1
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "3ph Meter"
+      SrcTerminal   7
+      Points        [865, 830]
+      Branch {
+        DstComponent  "Scope"
+        DstTerminal   1
+      }
+      Branch {
+        Points        [865, 610]
+        DstComponent  "Transfer Fcn"
+        DstTerminal   1
+      }
+    }
+    Connection {
+      Type          Wire
+      SrcComponent  "Ground"
+      SrcTerminal   1
+      DstComponent  "3ph Meter"
+      DstTerminal   9
+    }
+    Connection {
+      Type          Wire
+      SrcComponent  "C1"
+      SrcTerminal   2
+      Points        [555, 985]
+      Branch {
+        DstComponent  "VSI1"
+        DstTerminal   6
+      }
+      Branch {
+        Points        [555, 1030; 440, 1030]
+        DstComponent  "V1"
+        DstTerminal   2
+      }
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "From18"
+      SrcTerminal   1
+      Points        [305, 985]
+      Branch {
+        DstComponent  "Gain4"
+        DstTerminal   1
+      }
+      Branch {
+        Points        [305, 805]
+        DstComponent  "Product2"
+        DstTerminal   2
+      }
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Gain4"
+      SrcTerminal   2
+      Points        [380, 985]
+      Branch {
+        Points        [380, 950]
+        DstComponent  "V"
+        DstTerminal   3
+      }
+      Branch {
+        Points        [380, 1005]
+        DstComponent  "V1"
+        DstTerminal   3
+      }
+    }
+    Connection {
+      Type          Wire
+      SrcComponent  "V1"
+      SrcTerminal   1
+      Points        [440, 975]
+      Branch {
+        DstComponent  "V"
+        DstTerminal   2
+      }
+      Branch {
+        DstComponent  "Ground1"
+        DstTerminal   1
+      }
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Probe"
+      SrcTerminal   1
+      Points        [1310, 725]
+      Branch {
+        DstComponent  "Product3"
+        DstTerminal   2
+      }
+      Branch {
+        Points        [1310, 695]
+        DstComponent  "Scope20"
+        DstTerminal   1
+      }
+    }
+    Connection {
+      Type          Rotational
+      SrcComponent  "Torque\nSensor"
+      SrcTerminal   1
+      DstComponent  "Torque2"
+      DstTerminal   3
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Torque\nSensor"
+      SrcTerminal   2
+      Points        [1040, 1015]
+      Branch {
+        DstComponent  "Scope19"
+        DstTerminal   1
+      }
+      Branch {
+        DstComponent  "Goto20"
+        DstTerminal   1
+      }
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Product3"
+      SrcTerminal   1
+      Points        [1365, 765; 1365, 795]
+      DstComponent  "Mux2"
+      DstTerminal   2
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "From23"
+      SrcTerminal   1
+      Points        [1310, 825]
+      DstComponent  "Product5"
+      DstTerminal   3
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Product5"
+      SrcTerminal   1
+      DstComponent  "Mux2"
+      DstTerminal   3
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Mux2"
+      SrcTerminal   1
+      DstComponent  "Scope15"
+      DstTerminal   1
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Fcn"
+      SrcTerminal   2
+      DstComponent  "Transfer Fcn2"
+      DstTerminal   1
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Transfer Fcn2"
+      SrcTerminal   2
+      DstComponent  "Scope18"
+      DstTerminal   1
     }
   }
 }
